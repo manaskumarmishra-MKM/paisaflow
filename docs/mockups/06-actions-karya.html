@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>PaisaFlow</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fbf9f6;color:#1b1c1a;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1b1c1a", "tertiary-container": "#311fca", "primary-fixed": "#baeed9", "primary-fixed-dim": "#9ed1bd", "secondary-fixed": "#ffdbd2", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#7c2e19", "surface-variant": "#e4e2df", "on-error": "#ffffff", "background": "#fbf9f6", "on-tertiary-fixed": "#0f0069", "inverse-primary": "#9ed1bd", "on-secondary": "#ffffff", "on-primary-container": "#8abda9", "on-primary": "#ffffff", "on-primary-fixed": "#002117", "surface": "#fbf9f6", "outline-variant": "#c0c9c3", "on-tertiary-container": "#acaaff", "on-secondary-container": "#742814", "on-background": "#1b1c1a", "surface-bright": "#fbf9f6", "on-tertiary": "#ffffff", "tertiary-fixed": "#e2dfff", "primary": "#003629", "surface-container-low": "#f5f3f0", "surface-container-highest": "#e4e2df", "inverse-on-surface": "#f2f0ed", "secondary-container": "#fc9174", "secondary": "#9a442d", "surface-container-high": "#eae8e5", "tertiary": "#1c00a0", "surface-container": "#efeeeb", "inverse-surface": "#30312f", "secondary-fixed-dim": "#ffb4a1", "surface-tint": "#376757", "outline": "#707974", "primary-container": "#1b4d3e", "surface-dim": "#dbdad7", "on-surface-variant": "#404945", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#3323cc", "error": "#ba1a1a", "on-primary-fixed-variant": "#1d4f40", "on-secondary-fixed": "#3c0800", "tertiary-fixed-dim": "#c3c0ff" }, borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" }, spacing: { gutter: "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", margin: "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-xl": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-lg": ["16px", { lineHeight: "22px", letterSpacing: "0.01em", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-xl": ["20px", { lineHeight: "30px", fontWeight: "500" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm shadow-sm">₹</div><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary-fixed border-2 border-surface rounded-full"></span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface truncate">सुनीता डेयरी • शेखपुरा</span><span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" title="Live Sync Active"></span></div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Karya</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="भाषा बदलें" class="min-w-[44px] min-h-[44px] px-space-sm py-space-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors" type="button"><span>हिंदी</span><span class="text-outline text-[10px] mx-0.5">/</span><span class="text-on-surface-variant">EN</span></button><button aria-label="ऑडियो सुनें" class="min-w-[44px] min-h-[44px] w-11 h-11 rounded-full bg-surface-container hover:bg-surface-container-high text-primary-container flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">volume_up</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-space-xs shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1UTTgTSiT0g93iaG17IdMlDx5gie-aqtZG8jAkKCWDkuWXXTj_vSv9ZtHVtZb1IhFbHcbTFFHxCsCi2uoQXlOreJ7NyOKRK5R-j5RJsA2heQlMKh_GguIvcaWuYwpFQPNoRWWpS_OMGBxenb8eFLX6G6sXszlcLlL73g8reUDlgwq3O5Gibcx_kBYP8xxKi_3nmp6dGaJeI0SCKNyZ_YTuM-PBrsKUAHRiVpqusrLMankcEN55JZYtJi7foInfy1-BJXmyAB9OtAA"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface px-space-md"><div class="flex flex-col w-full space-y-space-md">
+<!-- Top Intro Section -->
+<section class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>प्राथमिक कार्य · ACTION LAYER</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping mr-0.5"></span>
+<span>3 कार्य लंबित (Pending)</span>
+</div>
+</div>
+<div class="pt-1">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        आज के ३ ज़रूरी काम
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        मुनीम जी द्वारा प्राथमिक क्रम में व्यवस्थित — केवल आपकी मंज़ूरी के बाद ही आगे बढ़ेंगे (100% सुरक्षित मानव नियंत्रण).
+      </p>
+</div>
+<!-- Quick Audio Assist Banner -->
+<div class="mt-1 flex items-center justify-between p-3 rounded-2xl bg-surface-container shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">आवाज़ में सुनें (Listen in Audio)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">हिंदी एवं भोजपुरी में पूरा विवरण</span>
+</div>
+</div>
+<button aria-label="पूरा कार्य ऑडियो में सुनें" class="flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 active:scale-95 transition-transform shadow-sm" id="playAllAudioBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>सुने</span>
+</button>
+</div>
+</section>
+<!-- Action Card 1: Urgent Collection Reminder -->
+<article class="flex flex-col bg-surface-container-lowest rounded-3xl p-4 shadow-sm space-y-3.5">
+<!-- Header with Priority & Provenance -->
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+          १. सबसे ज़रूरी
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+          12 दिन बकाया
+        </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase flex-shrink-0">
+        FACT (पक्का)
+      </span>
+</div>
+<!-- Title & Amount Stack -->
+<div class="flex items-baseline justify-between gap-2">
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">
+          रमेश टी स्टॉल को तगादा
+        </h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+          12 सितम्बर की शाम दूध सप्लाई (42 लीटर)
+        </p>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-bold">
+          ₹850
+        </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">वसूली योग्य</span>
+</div>
+</div>
+<!-- Visual Customer Snippet -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="A warm portrait of Ramesh, a rural Indian tea stall owner smiling outside his wooden tea kiosk in Bihar, natural morning lighting, realistic documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfdjKuSravJI1pAWE5f7f-l5y9Ai22a3bHdOiFsd8DUeZyIIPySQMQYfTTB_Jk3UGsLlZiJC4M__mIb1FAtNKbv3wXdF0h1ww6HyL-hQQ_3wgZEmnPHglUzj0F3WOVD0tf5GqKL8-qguSNdbfZladSSz__QuPIsXCQsuzj9fMArLH2gYu6zNelLrnYtxJMeAmbMN1DrItWkXuG7L0KUalAun27Fpc81SDfqhXOlfFlhF-yFwCJf3B_"/>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface truncate">रमेश टी स्टॉल (स्टेशन रोड)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">दुकानदार से 8 महीने का भरोसेमंद सम्बंध</p>
+</div>
+<a aria-label="कॉल करें" class="min-w-[44px] min-h-[44px] rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0" href="tel:+919800000000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+</div>
+<!-- Munimji Reasoning / Why -->
+<div class="p-3 rounded-2xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary-container text-[22px] flex-shrink-0 mt-0.5">lightbulb</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        पिछले 12 दिनों से भुगतान नहीं हुआ। आज याद दिलाने से कल सुबह का हरा चारा व खली ख़रीदने में नकदी की तंगी नहीं होगी।
+      </p>
+</div>
+<!-- Pre-Drafted WhatsApp Message Box -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span>
+          मुनीम जी द्वारा तैयार संदेश (WhatsApp ड्राफ्ट):
+        </span>
+<button class="font-label-sm text-label-sm text-primary underline" onclick="document.getElementById('draft1').focus()" type="button">
+          बदलें
+        </button>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface-container-high relative">
+<p class="font-body-md text-body-md text-on-surface italic" contenteditable="true" id="draft1">
+          “नमस्ते रमेश जी, सुनीता डेयरी का ₹850 का पिछला बकाया चल रहा है। आज शाम तक UPI या नकद कराने की कृपा करें ताकि चारे का भुगतान हो सके। धन्यवाद!”
+        </p>
+</div>
+</div>
+<!-- Action Approval Gates (56px targets) -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full min-h-[56px] px-4 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>✓ संदेश भेजें (Approve &amp; Send WhatsApp)</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="min-h-[52px] px-3 rounded-2xl bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>✎ संदेश बदलें</span>
+</button>
+<button class="min-h-[52px] px-3 rounded-2xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>शाम 6 बजे (Snooze)</span>
+</button>
+</div>
+</div>
+<!-- Quick Ledger Memory / Log Outcome -->
+<div class="pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2">
+        क्या रमेश जी ने पैसे दे दिए? (Log Outcome)
+      </span>
+<div class="grid grid-cols-2 gap-2">
+<button class="min-h-[48px] px-3 rounded-xl bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center gap-1.5 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>हाँ, नकद मिल गए</span>
+</button>
+<button class="min-h-[48px] px-3 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">event_repeat</span>
+<span>कल देंगे बोला</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Action Card 2: Operational Fodder Inventory Re-order -->
+<article class="flex flex-col bg-surface-container-lowest rounded-3xl p-4 shadow-sm space-y-3.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+          २. संचालन व स्टॉक
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+          3 दिन में ख़त्म
+        </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase flex-shrink-0">
+        ESTIMATE (अनुमान)
+      </span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+          सुधा पशु आहार स्टॉक री-ऑर्डर
+        </h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+          शेखपुरा एग्रो फीड्स प्राइवेट लिमिटेड
+        </p>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="font-headline-md text-headline-md text-primary font-bold">
+          ₹8,400
+        </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10 बोरी चूरी-खली</span>
+</div>
+</div>
+<!-- Inventory Visualization Graphic & Stock Bar -->
+<div class="p-3 rounded-2xl bg-surface-container-low flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">वर्तमान चारा स्टॉक स्तर</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">22% शेष (3.5 दिन)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 22%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-0.5">
+<span>उपलब्ध: 2 बोरी</span>
+<span>न्यूनतम सुरक्षित: 8 बोरी</span>
+</div>
+</div>
+<!-- Fodder Feed Image -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0" data-alt="Bags of cattle fodder, animal grain feed in a rustic Indian dairy warehouse with cows chewing grass in soft sunlight, warm earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4hmjLkHO85M_I00yL7__-plNIHDrk6VVNGqqahTLHZCnPOAzbcHzNi6c6WGBPXja9i143dfCnH6vq1fVq9dN1wov48VeZ7T5gOaQ2dldqmoTIiE8aZ82XkbAHHAjmok-ZIU8NpKNakNMpHnt0DDOgIqC6ZCYm55yNKYKkiYEHCQ3C1Dn1DmelBw7dnIk8aUKGiBk8dBDINIJSEPTwL-ZMKbbZtQyDUzJ3MsEyGOUTDa47dLrTTt-6"/>
+<div class="min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface block truncate">सुधा स्पेशल गोल्ड (50kg x 10)</span>
+<span class="font-label-sm text-label-sm text-secondary block font-semibold mt-0.5">28 अक्टूबर से ₹120/बोरी बढ़ने का अनुमान</span>
+</div>
+</div>
+<!-- Context Insight -->
+<div class="p-3 rounded-2xl bg-primary-fixed flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 mt-0.5">trending_up</span>
+<p class="font-body-md text-body-md text-on-primary-fixed">
+        मंडी में खली की आवक घटने से दाम ₹120/बोरी बढ़ने वाले हैं। आज 10 बोरी बुक करने पर सीधे <strong class="font-bold">₹1,200 की पक्की बचत</strong> होगी।
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-2 pt-1">
+<a class="w-full min-h-[56px] px-4 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform" href="tel:+919835000000">
+<span class="material-symbols-outlined text-[22px]">phone_forwarded</span>
+<span>📞 डीलर को कॉल मिलाएं (Call Sheikhpura Feeds)</span>
+</a>
+<button class="w-full min-h-[52px] px-4 rounded-2xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">currency_rupee</span>
+<span>ताज़ा मंडी भाव व दरें चेक करें</span>
+</button>
+</div>
+</article>
+<!-- Action Card 3: Financing & Risk Advisory - Safe Borrowability -->
+<article class="flex flex-col bg-surface-container-lowest rounded-3xl p-4 shadow-sm space-y-3.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+          ३. सुरक्षित वित्तीय निर्णय
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed-dim text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+          सुरक्षित विकल्प
+        </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase flex-shrink-0">
+        AI INFERENCE
+      </span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+        ₹9 लाख के बदले ₹6 लाख वाला सुरक्षित लोन चुनें
+      </h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+        बैंक ऑफ बड़ौदा डेयरी विस्तार योजना आवेदन
+      </p>
+</div>
+<!-- Comparison Matrix Bento -->
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 rounded-2xl bg-error-container text-on-error-container flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm block opacity-80">₹9 लाख लोन (असुरक्षित)</span>
+<span class="font-headline-md text-headline-md font-bold mt-1 block">₹22,400</span>
+<span class="font-label-sm text-label-sm block">मासिक किस्त (EMI)</span>
+</div>
+<div class="mt-2 pt-2 text-[11px] font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+          सर्दियों में सूखा जोखिम
+        </div>
+</div>
+<div class="p-3 rounded-2xl bg-primary-container text-on-primary flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed">₹6 लाख (मुनीम अनुशंसित)</span>
+<span class="material-symbols-outlined text-[16px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold mt-1 block">₹14,200</span>
+<span class="font-label-sm text-label-sm text-on-primary-container block">मासिक किस्त (EMI)</span>
+</div>
+<div class="mt-2 pt-2 text-[11px] font-label-sm text-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          ₹4,200 मासिक बफ़र सुरक्षित
+        </div>
+</div>
+</div>
+<!-- Financial Insight Description -->
+<div class="p-3 rounded-2xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary-container text-[22px] flex-shrink-0 mt-0.5">query_stats</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        ₹6 लाख लोन पर सर्दियों में दूध उत्पादन घटने पर भी <strong class="text-on-surface font-semibold">₹4,200 शुद्ध बचत</strong> रहेगी और 3 महीने की किस्त का आपातकालीन बफ़र पूरी तरह सुरक्षित रहेगा।
+      </p>
+</div>
+<!-- Action Button to What-If Tool -->
+<div class="pt-1">
+<button class="w-full min-h-[56px] px-4 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+<span>📊 सुरक्षित योजना देखें (View ₹6L Plan in What-If)</span>
+</button>
+</div>
+</article>
+<!-- Low-Literacy / Conversational Help Card -->
+<aside class="p-4 rounded-3xl bg-surface-container flex flex-col space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-label-lg text-label-lg text-on-surface">कोई काम समझ नहीं आ रहा?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">मुनीम जी से बोलकर सरल भाषा में समझें।</p>
+</div>
+</div>
+<button class="w-full min-h-[52px] px-4 rounded-2xl bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px] text-secondary">mic</span>
+<span>🎙️ एक-एक करके समझाएं (Explain Step-by-Step)</span>
+</button>
+</aside>
+<!-- Bottom Interactive Anchor: Add New Action by Voice -->
+<div class="pt-2 pb-1">
+<button class="w-full min-h-[56px] px-5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-3 shadow-[0_8px_20px_rgba(27,77,62,0.25)] active:scale-98 transition-transform" type="button">
+<span class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</span>
+<span>बोलकर नया काम जोड़ें (Speak New Action)</span>
+</button>
+</div>
+</div>
+<script>
+  (function () {
+    const playBtn = document.getElementById('playAllAudioBtn');
+    if (playBtn) {
+      let isPlaying = false;
+      playBtn.addEventListener('click', function () {
+        isPlaying = !isPlaying;
+        const icon = playBtn.querySelector('.material-symbols-outlined');
+        const text = playBtn.querySelector('span:last-child');
+        if (isPlaying) {
+          icon.textContent = 'pause_circle';
+          text.textContent = 'रुकें';
+          playBtn.classList.add('bg-secondary');
+          playBtn.classList.remove('bg-primary');
+        } else {
+          icon.textContent = 'play_circle';
+          text.textContent = 'सुने';
+          playBtn.classList.add('bg-primary');
+          playBtn.classList.remove('bg-secondary');
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-label-md"><div class="flex items-center justify-around h-20 px-space-xs max-w-lg mx-auto"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[56px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">होम</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[56px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="vyapaar" href="#"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-label-sm mt-0.5">व्यापार</span></a><div class="flex items-center justify-center flex-1 -mt-5"><a class="flex flex-col items-center justify-center w-16 h-16 rounded-full bg-primary-container text-on-primary shadow-[0_8px_20px_rgba(27,77,62,0.35)] active:scale-95 transition-transform" data-path="boliye" href="#"><span class="material-symbols-outlined text-[28px]">mic</span><span class="text-[10px] font-label-sm tracking-tight text-primary-fixed">बोलिए</span></a></div><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[56px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="anumaan" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-sm text-label-sm mt-0.5">अनुमान</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[56px] flex-1 transition-colors text-primary-container font-label-md" data-path="karya" href="#"><span class="material-symbols-outlined text-[24px]">checklist</span><span class="font-label-sm text-label-sm mt-0.5">कार्य</span></a></div></nav></body></html>

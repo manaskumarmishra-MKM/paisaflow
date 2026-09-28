@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>PaisaFlow</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#707974", "primary-fixed": "#baeed9", "outline-variant": "#c0c9c3", "on-tertiary-fixed": "#0f0069", "surface-container": "#efeeeb", "tertiary": "#1c00a0", "on-primary-fixed": "#002117", "inverse-on-surface": "#f2f0ed", "on-primary": "#ffffff", "surface": "#fbf9f6", "surface-container-lowest": "#ffffff", "on-secondary-container": "#742814", "secondary-fixed-dim": "#ffb4a1", "on-secondary-fixed-variant": "#7c2e19", "surface-container-low": "#f5f3f0", "primary-fixed-dim": "#9ed1bd", "error": "#ba1a1a", "primary-container": "#1b4d3e", "on-tertiary-container": "#acaaff", "tertiary-container": "#311fca", "tertiary-fixed-dim": "#c3c0ff", "on-error-container": "#93000a", "on-secondary-fixed": "#3c0800", "on-primary-container": "#8abda9", "on-tertiary-fixed-variant": "#3323cc", "surface-container-highest": "#e4e2df", "on-tertiary": "#ffffff", "tertiary-fixed": "#e2dfff", "secondary-container": "#fc9174", "surface-tint": "#376757", "surface-dim": "#dbdad7", "primary": "#003629", "surface-variant": "#e4e2df", "on-surface-variant": "#404945", "secondary-fixed": "#ffdbd2", "inverse-primary": "#9ed1bd", "surface-container-high": "#eae8e5", "on-secondary": "#ffffff", "background": "#fbf9f6", "secondary": "#9a442d", "on-surface": "#1b1c1a", "error-container": "#ffdad6", "on-background": "#1b1c1a", "surface-bright": "#fbf9f6", "on-primary-fixed-variant": "#1d4f40", "inverse-surface": "#30312f", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-xl": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-xl": ["20px", { "lineHeight": "30px", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }] } } } };</script><style>@layer base { html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="पीछे जाएं" class="w-11 h-11 -ml-1 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">Audio Playback &amp; Audit</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="ऑडियो सुनें" class="w-11 h-11 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1UTTgTSiT0g93iaG17IdMlDx5gie-aqtZG8jAkKCWDkuWXXTj_vSv9ZtHVtZb1IhFbHcbTFFHxCsCi2uoQXlOreJ7NyOKRK5R-j5RJsA2heQlMKh_GguIvcaWuYwpFQPNoRWWpS_OMGBxenb8eFLX6G6sXszlcLlL73g8reUDlgwq3O5Gibcx_kBYP8xxKi_3nmp6dGaJeI0SCKNyZ_YTuM-PBrsKUAHRiVpqusrLMankcEN55JZYtJi7foInfy1-BJXmyAB9OtAA"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-safe space-y-space-lg px-margin-mobile">
+<!-- Entity Header Context with Brand Stamp -->
+<section class="bg-surface-container-low rounded-lg p-space-md shadow-sm flex items-center justify-between gap-space-sm mt-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm flex-shrink-0 shadow-sm">
+        SD
+      </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">सुनीता डेयरी</h2>
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">शेखपुरा, बिहार • दुग्ध उत्पादक खाता #4102</p>
+</div>
+</div>
+<div class="w-14 h-9 flex-shrink-0 rounded bg-surface-container flex items-center justify-center p-1 shadow-sm">
+<img alt="PaisaFlow Trust Seal" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhTEkYob9DS8n9wU8AD-uG7FtWl95n2mjgBBhcHTTyRLyXbN5mnZ8lYbBkFfVjVmLmdQNBQcyBVNlMWq7ijsTcstH6TiLvoheKsnkd08HaJquRvhBOrDLFlLVbUgEOczAx_IUGttM_KqLX85grT8oyRyBOXA7ddnBhSRyXHw1jIoE_AlxQm-fhLPoMkj5I_YPebFPAUzEyumCGCyebIRZ2eqKJVxZkRHh4oar5nGDBsmnbGjwCTap7nGEKs-UZQVWZQ"/>
+</div>
+</section>
+<!-- Title Banner: Trust Engine Header -->
+<section class="bg-primary text-on-primary rounded-lg p-space-md shadow-md space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px] text-primary-fixed">troubleshoot</span>
+<span class="font-label-md text-label-md text-primary-fixed uppercase">पारदर्शिता और प्रमाण (Evidence Mode)</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary tracking-tight">
+      🔎 ये रिज़ल्ट कहाँ से आया?
+    </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">
+      हर एक आंकड़ा 100% जाँचा-परखा है। इसमें कोई मनगढ़ंत या बनावटी हिसाब नहीं है।
+    </p>
+</section>
+<!-- Trust Bar Graph (70% - 20% - 10%) -->
+<section class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">डेटा स्रोत विभाजन (Data Provenance)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% सत्यापित स्कोर</span>
+</div>
+<div class="w-full h-4 rounded-full bg-surface-container flex overflow-hidden">
+<div class="h-full bg-[#16A34A] transition-all duration-500" style="width: 70%;" title="70% User Confirmed"></div>
+<div class="h-full bg-[#D97706] transition-all duration-500" style="width: 20%;" title="20% Mandi Observation"></div>
+<div class="h-full bg-[#4F46E5] transition-all duration-500" style="width: 10%;" title="10% Deterministic Code"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs text-center font-label-sm text-label-sm">
+<div class="flex items-center justify-center gap-1 text-[#14532D]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#16A34A]"></span> 70% सच
+      </div>
+<div class="flex items-center justify-center gap-1 text-[#78350F]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#D97706]"></span> 20% मंडी
+      </div>
+<div class="flex items-center justify-center gap-1 text-[#312E81]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#4F46E5]"></span> 10% सूत्र
+      </div>
+</div>
+</section>
+<!-- Provenance 1: Fact (70%) -->
+<article class="bg-surface-container-lowest rounded-lg p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-[#16A34A]" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">आपकी खुद की आवाज़</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-[#DCFCE7] text-[#14532D] font-label-sm text-label-sm font-bold flex items-center gap-1 flex-shrink-0">
+        🟢 FACT (70%)
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      सुनीता देवी द्वारा बोलकर दर्ज कराई गई पक्की जानकारी (Voice Confirmed Record):
+    </p>
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="bg-surface-container rounded-DEFAULT p-space-sm text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">दुधारू गाय</p>
+<p class="font-headline-sm text-headline-sm text-primary">4 गायें</p>
+</div>
+<div class="bg-surface-container rounded-DEFAULT p-space-sm text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">पूँजी लागत</p>
+<p class="font-headline-sm text-headline-sm text-primary">₹1,00,000</p>
+</div>
+<div class="bg-surface-container rounded-DEFAULT p-space-sm text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">मासिक बिक्री</p>
+<p class="font-headline-sm text-headline-sm text-primary">₹78,000</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-sm rounded-DEFAULT text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">graphic_eq</span>
+<span class="font-label-sm text-label-sm truncate">ऑडियो लॉग आईडी: VOX-BH-2024-8831</span>
+</div>
+</article>
+<!-- Provenance 2: Observation (20%) -->
+<article class="bg-surface-container-lowest rounded-lg p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-[#D97706]" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">शेखपुरा मंडी पड़ताल</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-[#FEF3C7] text-[#78350F] font-label-sm text-label-sm font-bold flex items-center gap-1 flex-shrink-0">
+        🟠 OBSERVATION (20%)
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      शेखपुरा ब्लॉक मंडी रेट (अपडेट: 12 सितंबर 2024) से तुलना:
+    </p>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-DEFAULT">
+<span class="font-body-md text-body-md text-on-surface">सरकारी फैट बेंचमार्क खरीद दर:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₹41.50 / ली.</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-DEFAULT">
+<span class="font-body-md text-body-md text-on-surface">आसपास की सक्रिय डेयरियां (PostGIS):</span>
+<span class="font-label-lg text-label-lg text-secondary">3 प्रतिस्पर्धी मैप किए गए</span>
+</div>
+</div>
+</article>
+<!-- Provenance 3: Estimate (10%) -->
+<article class="bg-surface-container-lowest rounded-lg p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-[#4F46E5]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">पक्का गणितीय फॉर्मूला</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-[#EEF2FF] text-[#312E81] font-label-sm text-label-sm font-bold flex items-center gap-1 flex-shrink-0">
+        🟣 ESTIMATE (10%)
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      PaisaFlow Deterministic Python Engine — कोई मनगढ़ंत अंदाज़ा या AI झूठ (Zero LLM hallucination) नहीं:
+    </p>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Reducing Balance EMI फॉर्मूला (घटते मूलधन पर ब्याज)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>4-स्ट्रैस शॉक मैट्रिक्स (सूखा, बीमारी, चारे का भाव वृद्धि)</span>
+</li>
+</ul>
+</article>
+<!-- Explainer Module: Screen 20 - Samajh Nahi Aa Raha? -->
+<section class="bg-secondary-container text-on-secondary-container rounded-lg p-space-md shadow-md space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">help_center</span>
+<span class="font-headline-sm text-headline-sm font-bold">❓ समझ नहीं आ रहा?</span>
+</div>
+<p class="font-body-md text-body-md opacity-90">सरल उदाहरण से समझें (Simple Real-Life Metaphor)</p>
+</div>
+<button aria-label="ऑडियो में समझें" class="min-w-[56px] min-h-[56px] rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg active:scale-95 transition-transform flex-shrink-0" id="voicePlayBtn">
+<span class="material-symbols-outlined text-[28px]">volume_up</span>
+</button>
+</div>
+<!-- Question Box -->
+<div class="bg-surface-container-lowest text-on-surface rounded-DEFAULT p-space-md shadow-sm">
+<p class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">आज का सवाल</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface pt-1">
+        "EMI और Cash Buffer का असल मतलब क्या है?"
+      </h3>
+</div>
+<!-- Visual Real-Life Metaphor: The Milk Bucket Graphic -->
+<div class="bg-surface-container-lowest text-on-surface rounded-DEFAULT p-space-md shadow-sm space-y-space-md">
+<div class="text-center space-y-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">दूध की बाल्टी का नियम (रोज़ाना 8 बाल्टी उत्पादन)</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">देखें हर बाल्टी का दूध कहाँ जाता है:</p>
+</div>
+<!-- SVG Milk Bucket Graphic -->
+<div class="w-full flex justify-center py-space-xs">
+<svg aria-label="दूध वितरण आरेख" class="w-full max-w-[280px] h-auto drop-shadow-sm" viewbox="0 0 320 180">
+<!-- Bucket Container -->
+<path d="M 40,25 L 280,25 L 240,165 C 240,172 230,178 215,178 L 105,178 C 90,178 80,172 80,165 Z" fill="#EFEEEB"></path>
+<!-- Bottom 3 Buckets: Home & Cattle Feed (Costs) -->
+<path d="M 80,165 C 80,172 90,178 105,178 L 215,178 C 230,178 240,172 240,165 L 245,120 L 75,120 Z" fill="#FFB4A1"></path>
+<text class="font-label-md text-[12px] font-bold" fill="#742814" text-anchor="middle" x="160" y="152">3 बाल्टी: चारा व घर खर्च</text>
+<!-- Middle 3 Buckets: Loan EMI -->
+<path d="M 75,120 L 245,120 L 255,70 L 65,70 Z" fill="#9ED1BD"></path>
+<text class="font-label-md text-[12px] font-bold" fill="#003629" text-anchor="middle" x="160" y="100">3 बाल्टी: बैंक किस्त (EMI)</text>
+<!-- Top 2 Buckets: Cash Buffer (Emergency Savings) -->
+<path d="M 65,70 L 255,70 L 270,35 L 50,35 Z" fill="#BAEED9"></path>
+<text class="font-label-md text-[12px] font-bold" fill="#003629" text-anchor="middle" x="160" y="56">2 बाल्टी: बफ़र बचत (Buffer)</text>
+<!-- Bucket Rim Outline via Fill -->
+<ellipse cx="160" cy="25" fill="#707974" opacity="0.3" rx="120" ry="12"></ellipse>
+</svg>
+</div>
+<!-- Metaphor Breakdown Chips -->
+<div class="grid grid-cols-3 gap-space-xs text-center font-label-sm text-label-sm">
+<div class="p-space-xs rounded bg-surface-container">
+<p class="text-secondary font-bold">3 बाल्टी</p>
+<p class="text-on-surface-variant">चारा-दवा</p>
+</div>
+<div class="p-space-xs rounded bg-primary-fixed">
+<p class="text-on-primary-fixed font-bold">3 बाल्टी</p>
+<p class="text-on-primary-fixed-variant">बैंक EMI</p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-high">
+<p class="text-primary font-bold">2 बाल्टी</p>
+<p class="text-on-surface-variant">बचत बफ़र</p>
+</div>
+</div>
+<!-- Plain Language Explanation -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-space-xs">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong>सीधी बात:</strong> <em>EMI</em> का मतलब है हर महीने दूध बेचकर बैंक को लौटाई जाने वाली पक्की क़िस्त।
+        </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          अगर जाड़े या बीमारी में दूध <strong>8 बाल्टी से घटकर 5 बाल्टी</strong> हो जाए, तो बची हुई 2 बाल्टी से घर का खर्च नहीं चलेगा। इसीलिए <em>'बफ़र'</em> जरूरी है ताकि आपकी जेब खाली न हो!
+        </p>
+</div>
+</div>
+<!-- Audio Player Action Prompt -->
+<button class="w-full min-h-[56px] rounded-DEFAULT bg-primary text-on-primary px-space-md py-space-sm flex items-center justify-between shadow-md active:scale-98 transition-all" id="audioPlaybackBanner">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+<span class="font-label-lg text-label-lg">🔊 आवाज़ में सुनें (Listen in Hindi/Bhojpuri)</span>
+</div>
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</button>
+</section>
+<!-- Visual Delight: Farmer Story Card -->
+<section class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology_alt</span>
+<span class="font-label-md text-label-md text-on-surface">पड़ोस की मिसाल (Real Field Story)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A portrait of a smiling Indian rural woman dairy owner in a bright saffron sari standing near her clean cattle shed with milch cows in warm morning sunlight, vibrant earthy tones, dignified and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHGLmUY-n3UXaqs26Xb2nU5QrrL99hzB4wlkJs_fCc0icv7CJr8F3oWR91wCvGb-69cHBtSSAXGZWkLA1ipEmlHJPz7d2HCBZ18Px3TBo3CWdwrNDd5t_kdmgr_DEg8gd7Fq-frf8gV_-Uex8ORgzIcGu_6sdMLbhj7fw2UNReQDZtLChb0174eG8KoJT1DqxCH-K5ro3ZPxPplig0PO83-pWLmXCciCEg4KGsA-2OALRfNEPzx2ZH"/>
+</div>
+<div class="min-w-0">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">कमला ताई, बरबीघा</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          "जब मेरी एक गाय बीमार हुई, तो इसी 2 बाल्टी बफ़र ने मेरी क़िस्त भरी और मुझे महाजन के पास नहीं जाना पड़ा।"
+        </p>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom 40% Action Zone (The Golden Safe Zone) -->
+<footer class="pt-space-sm pb-space-lg space-y-space-sm">
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="min-h-[56px] w-full px-space-sm rounded-DEFAULT bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" onclick="alert('छोटा उदाहरण लोड हो रहा है...')">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>छोटा उदाहरण देखें</span>
+</button>
+<button class="min-h-[56px] w-full px-space-sm rounded-DEFAULT bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" onclick="alert('किसान मित्र से संपर्क साधा जा रहा है...')">
+<span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span>
+<span>मित्र से बात करें</span>
+</button>
+</div>
+<!-- Voice Primary Hero Button -->
+<button class="w-full min-h-[64px] rounded-full bg-primary-container text-on-primary flex items-center justify-center gap-space-md shadow-xl active:scale-95 transition-transform" id="mainVoiceMicBtn">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[24px]">mic</span>
+</div>
+<div class="text-left">
+<span class="font-headline-sm text-headline-sm block leading-none">बोलिए (Boliye)</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">कोई भी सवाल बेझिझक पूछें</span>
+</div>
+</button>
+</footer>
+</div>
+<script>
+  (function() {
+    const playBtn = document.getElementById('voicePlayBtn');
+    const audioBanner = document.getElementById('audioPlaybackBanner');
+    const voiceMic = document.getElementById('mainVoiceMicBtn');
+
+    let isPlaying = false;
+
+    function toggleAudio() {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        audioBanner.classList.remove('bg-primary');
+        audioBanner.classList.add('bg-secondary');
+        audioBanner.querySelector('.font-label-lg').textContent = '⏹️ आवाज़ चल रही है... (Playing in Bhojpuri)';
+      } else {
+        audioBanner.classList.add('bg-primary');
+        audioBanner.classList.remove('bg-secondary');
+        audioBanner.querySelector('.font-label-lg').textContent = '🔊 आवाज़ में सुनें (Listen in Hindi/Bhojpuri)';
+      }
+    }
+
+    if (playBtn) playBtn.addEventListener('click', toggleAudio);
+    if (audioBanner) audioBanner.addEventListener('click', toggleAudio);
+
+    if (voiceMic) {
+      voiceMic.addEventListener('click', function() {
+        alert('माइक्रोफोन सुन रहा है... आप शेखपुरा मंडी या ब्याज दर के बारे में बोल सकते हैं।');
+      });
+    }
+  })();
+</script></main></body></html>

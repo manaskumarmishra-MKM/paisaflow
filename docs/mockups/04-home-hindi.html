@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>PaisaFlow</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#707974", "primary-fixed": "#baeed9", "outline-variant": "#c0c9c3", "on-tertiary-fixed": "#0f0069", "surface-container": "#efeeeb", "tertiary": "#1c00a0", "on-primary-fixed": "#002117", "inverse-on-surface": "#f2f0ed", "on-primary": "#ffffff", "surface": "#fbf9f6", "surface-container-lowest": "#ffffff", "on-secondary-container": "#742814", "secondary-fixed-dim": "#ffb4a1", "on-secondary-fixed-variant": "#7c2e19", "surface-container-low": "#f5f3f0", "primary-fixed-dim": "#9ed1bd", "error": "#ba1a1a", "primary-container": "#1b4d3e", "on-tertiary-container": "#acaaff", "tertiary-container": "#311fca", "tertiary-fixed-dim": "#c3c0ff", "on-error-container": "#93000a", "on-secondary-fixed": "#3c0800", "on-primary-container": "#8abda9", "on-tertiary-fixed-variant": "#3323cc", "surface-container-highest": "#e4e2df", "on-tertiary": "#ffffff", "tertiary-fixed": "#e2dfff", "secondary-container": "#fc9174", "surface-tint": "#376757", "surface-dim": "#dbdad7", "primary": "#003629", "surface-variant": "#e4e2df", "on-surface-variant": "#404945", "secondary-fixed": "#ffdbd2", "inverse-primary": "#9ed1bd", "surface-container-high": "#eae8e5", "on-secondary": "#ffffff", "background": "#fbf9f6", "secondary": "#9a442d", "on-surface": "#1b1c1a", "error-container": "#ffdad6", "on-background": "#1b1c1a", "surface-bright": "#fbf9f6", "on-primary-fixed-variant": "#1d4f40", "inverse-surface": "#30312f", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-xl": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-xl": ["20px", { "lineHeight": "30px", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }] } } } };</script><style>@layer base { html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="पीछे जाएं" class="w-11 h-11 -ml-1 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">Audio Playback &amp; Audit</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="ऑडियो सुनें" class="w-11 h-11 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1UTTgTSiT0g93iaG17IdMlDx5gie-aqtZG8jAkKCWDkuWXXTj_vSv9ZtHVtZb1IhFbHcbTFFHxCsCi2uoQXlOreJ7NyOKRK5R-j5RJsA2heQlMKh_GguIvcaWuYwpFQPNoRWWpS_OMGBxenb8eFLX6G6sXszlcLlL73g8reUDlgwq3O5Gibcx_kBYP8xxKi_3nmp6dGaJeI0SCKNyZ_YTuM-PBrsKUAHRiVpqusrLMankcEN55JZYtJi7foInfy1-BJXmyAB9OtAA"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- TOP BUSINESS BRAND & AUDIO HERO BAR -->
+<section class="px-margin-mobile pt-2 pb-space-sm">
+<div class="flex items-center justify-between gap-space-sm bg-surface-container-low rounded-2xl p-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0 text-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">store</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">सुनीता डेयरी</h2>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+              शेखपुरा
+            </span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">कोष Live · सुरक्षित खाता</span>
+</div>
+</div>
+</div>
+<!-- Quick Audio & Lang Controls -->
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="भाषा बदलें" class="min-h-[44px] px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-1" id="langToggleBtn">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span>हिंदी</span>
+</button>
+<button aria-label="पूरा पन्ना सुनकर समझें" class="w-11 h-11 rounded-full bg-primary text-on-primary flex items-center justify-center active:scale-95 transition-transform shadow-sm" id="audioSpeakBtn">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</button>
+</div>
+</div>
+</section>
+<!-- GREETING & CONTEXT HEADER -->
+<section class="px-margin-mobile py-space-xs">
+<div class="flex flex-col">
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+          नमस्ते सुनीता जी! 👋
+        </h1>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>आज: 24 अक्टूबर 2026 • शेखपुरा ब्लॉक</span>
+</p>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold mt-1">
+        आज व्यापार में क्या हिसाब देखना है?
+      </p>
+</div>
+</section>
+<!-- HERO DOMINANT TACTILE VOICE CTA CARD (The Heart of PaisaFlow) -->
+<section class="px-margin-mobile mt-space-sm">
+<div class="relative overflow-hidden bg-primary-container text-on-primary rounded-3xl p-space-md shadow-xl">
+<!-- Background Ambient Acoustic Ripples -->
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-primary-fixed/10 pointer-events-none blur-xl"></div>
+<div class="absolute right-4 bottom-2 opacity-15 pointer-events-none text-primary-fixed">
+<svg fill="none" height="90" viewbox="0 0 140 90" width="140">
+<path d="M10 45 Q 25 15, 40 45 T 70 45 T 100 45 T 130 45" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path>
+<path d="M20 45 Q 35 25, 50 45 T 80 45 T 110 45" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<!-- Provenance & Voice Badge -->
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary animate-bounce">mic</span>
+            VOICE ASSISTANT · आवाज़ से हिसाब
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm">
+            Instant AI
+          </span>
+</div>
+<div class="mt-space-md">
+<h2 class="font-headline-md text-headline-md text-white tracking-tight">
+            बोलिए और हिसाब दर्ज कीजिए
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container mt-1">
+            "कुंदन ने 500 रुपये दिए" या "आज का दूध लिखो" — बस माइक दबाकर बोलें।
+          </p>
+</div>
+<!-- Big Tactile Terracotta Mic Action Node -->
+<div class="mt-space-md flex flex-col items-center justify-center">
+<div class="relative flex items-center justify-center my-2">
+<!-- Pulsing Rings -->
+<div class="absolute w-28 h-28 rounded-full bg-secondary-container opacity-40 animate-ping" id="micWave"></div>
+<div class="absolute w-24 h-24 rounded-full bg-secondary opacity-30"></div>
+<button aria-label="माइक चालू करें और बोलें" class="relative z-20 w-20 h-20 rounded-full bg-secondary text-on-secondary flex flex-col items-center justify-center shadow-2xl active:scale-90 transition-transform cursor-pointer" id="heroVoiceBtn">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+</div>
+<span class="font-label-lg text-label-lg text-white font-bold mt-1">
+            दबाकर बोलिए (Boliye)
+          </span>
+<span class="font-label-sm text-label-sm text-on-primary-container">
+            भोजपुरी, मगही व हिंदी समझता है
+          </span>
+</div>
+<!-- Live Waveform Capsule State (Dynamic placeholder) -->
+<div class="mt-space-md bg-primary text-on-primary p-space-sm rounded-2xl flex items-center gap-space-sm shadow-inner" id="voiceTranscriptBox">
+<div class="flex items-center gap-1 text-primary-fixed">
+<span class="w-1 h-3.5 bg-primary-fixed rounded-full animate-pulse"></span>
+<span class="w-1 h-6 bg-primary-fixed rounded-full animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-1 h-4 bg-primary-fixed rounded-full animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-1 h-2 bg-primary-fixed rounded-full animate-pulse" style="animation-delay: 75ms;"></span>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim truncate" id="transcriptText">
+            सुनने के लिए तैयार: "रमेश का बकाया कितना है?"
+          </p>
+</div>
+<!-- Secondary Quick Prompt Chips -->
+<div class="mt-space-sm flex items-center gap-2 overflow-x-auto pb-1">
+<button class="flex-shrink-0 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-label-sm text-label-sm whitespace-nowrap active:scale-95 transition-transform" onclick="setPrompt('दूध का सुबह का हिसाब लिखो')">
+            💬 "दूध का हिसाब लिखो"
+          </button>
+<button class="flex-shrink-0 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-label-sm text-label-sm whitespace-nowrap active:scale-95 transition-transform" onclick="setPrompt('₹9 लाख लोन का रिस्क दिखाओ')">
+            ⚡ "लोन का रिस्क बताओ"
+          </button>
+<button class="flex-shrink-0 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-label-sm text-label-sm whitespace-nowrap active:scale-95 transition-transform" onclick="setPrompt('रमेश का कितना बाकी है?')">
+            🥛 "रमेश का बाकी"
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- HIGH-URGENCY PROACTIVE ALERT BANNER -->
+<section class="px-margin-mobile mt-space-md">
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded-2xl p-space-sm flex items-center justify-between gap-space-sm shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">notification_important</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm bg-error text-on-error px-2 py-0.2 rounded-full uppercase tracking-wider font-bold">
+              12 दिन बकाया
+            </span>
+<span class="font-label-md text-label-md font-bold text-secondary truncate">
+              रमेश टी स्टॉल
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mt-0.5 truncate">
+            ₹850 बाकी है · तगादा संदेश तैयार है
+          </p>
+</div>
+</div>
+<button aria-label="तगादा भेजें" class="min-h-[48px] px-3.5 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center gap-1 flex-shrink-0 shadow active:scale-95 transition-transform" onclick="alert('WhatsApp संदेश रमेश जी को भेजा गया: नमस्ते रमेश जी, सुनीता डेयरी का ₹850 बकाया है।')">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>तगादा</span>
+</button>
+</div>
+</section>
+<!-- 4-PILLAR BUSINESS SNAPSHOT (KOSH SNAPSHOT) -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">कारोबार का हाल (4 खंभे)</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">पक्की जानकारी और लाइव अनुमान</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-bold">
+        आज का बहीखाता
+      </span>
+</div>
+<!-- 2x2 Grid with Strict Elevation and Tactile Feel -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<!-- Card 1: Liquid Cash / Money -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between min-h-[148px]">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+              FACT
+            </span>
+</div>
+<div class="mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">हाथ में रोकड़ (Safe)</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block mt-0.5">
+              ₹1,00,000
+            </span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2 border-t-0 bg-surface-container-low p-1.5 rounded-lg">
+          SBI शेखपुरा • सुरक्षित बचत
+        </p>
+</div>
+<!-- Card 2: Milk Sales / Revenue -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between min-h-[148px]">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+              FACT
+            </span>
+</div>
+<div class="mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">मासिक बिक्री (दूध)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight block mt-0.5">
+              ₹78,000
+            </span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-primary font-semibold mt-2 bg-primary-fixed/40 p-1.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+          +8% पिछले महीने से
+        </p>
+</div>
+<!-- Card 3: Cattle Feed / Stock -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between min-h-[148px]">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              अनुमान
+            </span>
+</div>
+<div class="mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">सुधा दाना चूरी स्टॉक</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold tracking-tight block mt-0.5">
+              14 दिन का
+            </span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-secondary-container mt-2 bg-secondary-fixed/50 p-1.5 rounded-lg">
+          ⚠️ 3 दिन में ऑर्डर दें
+        </p>
+</div>
+<!-- Card 4: Receivables / Udhaar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm flex flex-col justify-between min-h-[148px]">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+              FACT
+            </span>
+</div>
+<div class="mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">मार्केट का बाकी उधार</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight block mt-0.5">
+              ₹18,500
+            </span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2 bg-surface-container-low p-1.5 rounded-lg">
+          3 ग्राहक (रमेश, कुंदन, श्याम)
+        </p>
+</div>
+</div>
+</section>
+<!-- DIGITAL TWIN & RESILIENCE PREVIEW CARD -->
+<section class="px-margin-mobile mt-space-md">
+<div class="rounded-3xl p-space-md bg-gradient-to-br from-primary via-primary-container to-surface-tint text-on-primary shadow-lg relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-[13px]">
+              AI
+            </span>
+<span class="font-label-md text-label-md tracking-wider text-primary-fixed uppercase">
+              सुनीता डेयरी डिजिटल ट्विन v1.2
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/20 font-label-sm text-label-sm">
+            AI INFERENCE
+          </span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 rounded-full bg-primary-fixed animate-pulse"></div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold">
+              व्यापार की सेहत: सुरक्षित
+            </h3>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim mt-1">
+            मौजूदा बचत से आपका कारोबार <span class="text-white font-bold">84 दिन (लगभग 3 महीने)</span> बिना किसी नए कर्ज के पूरी मजबूती से चल सकता है।
+          </p>
+</div>
+<!-- Simulation Warning / Opportunity Note -->
+<div class="mt-space-sm bg-surface-container-lowest/15 p-space-sm rounded-2xl backdrop-blur-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[22px] flex-shrink-0 mt-0.5">ac_unit</span>
+<div>
+<span class="font-label-md text-label-md text-secondary-fixed block font-bold">सर्दियों का मौसम अनुमान</span>
+<span class="font-body-md text-body-md text-on-primary text-opacity-90">
+              दिसंबर में हरे चारे के दाम 12% बढ़ सकते हैं। अभी अग्रिम स्टॉक का विकल्प देखें।
+            </span>
+</div>
+</div>
+<!-- Action button -->
+<div class="mt-space-md flex items-center justify-between">
+<button aria-label="डिजिटल ट्विन खोलें" class="min-h-[48px] px-5 py-2.5 rounded-2xl bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg font-bold flex items-center gap-2 shadow-md active:scale-95 transition-transform" onclick="alert('डिजिटल ट्विन सिम्युलेटर खुल रहा है...')">
+<span>सिमुलेशन खोलें</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">
+            99.2% मॉडल एक्यूरेसी
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- AAJ KE TOP 3 KAAM (TODAY'S CORE ACTIONS) -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">🎯 आज के 3 ज़रूरी काम</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">समय पर करने से मुनाफ़ा सुरक्षित रहेगा</p>
+</div>
+<button class="font-label-md text-label-md text-primary font-bold active:underline" onclick="alert('सभी 3 कार्य सूची में खुले हैं')">
+        सभी देखें (3) →
+      </button>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Task 1: Ramesh Reminder -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">रमेश टी स्टॉल को याद दिलाएं</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">₹850 बकाया (12 दिन) • ड्राफ्ट तैयार</p>
+</div>
+<button class="min-h-[48px] min-w-[56px] px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center justify-center" onclick="alert('संदेश भेज दिया गया!')">
+          भेजें
+        </button>
+</div>
+<!-- Task 2: Kundan Milk Confirmation -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">check_circle</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">कुंदन डेयरी का 18L दूध दर्ज करें</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">सुबह का कोटा • ₹720 का हिसाब</p>
+</div>
+<button class="min-h-[48px] min-w-[56px] px-3.5 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center justify-center" id="taskConfirmBtn" onclick="this.innerHTML='दर्ज हुआ ✓'; this.classList.replace('bg-surface-container-high', 'bg-primary-fixed'); this.classList.replace('text-on-surface', 'text-on-primary-fixed')">
+          पक्का करें
+        </button>
+</div>
+<!-- Task 3: Mandi Rate Comparison -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">price_change</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">शेखपुरा मंडी रेट चेक करें</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">आज का भाव ₹41.50/L (+₹1.50 ज़्यादा)</p>
+</div>
+<button class="min-h-[48px] min-w-[56px] px-3.5 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-bold active:scale-95 transition-transform flex items-center justify-center" onclick="alert('मंडी भाव: शेखपुरा दुग्ध समिति ₹41.50, बरबीघा ₹40.00')">
+          देखें
+        </button>
+</div>
+</div>
+</section>
+<!-- RECENT AUDIO TRANSACTION STREAM CHIP -->
+<section class="px-margin-mobile mt-space-md mb-2">
+<div class="bg-surface-container-low rounded-2xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">
+          पिछली आवाज़ प्रविष्टि:
+        </span>
+<span class="font-body-md text-body-md text-on-surface-variant truncate max-w-[170px]">
+          "श्याम ग्वाला से 2 बोरी खली ली"
+        </span>
+</div>
+<button aria-label="पिछली प्रविष्टि सुनें" class="p-2 text-primary active:scale-90" onclick="alert('आवाज रीप्ले: श्याम ग्वाला से दो बोरी खली ली, कीमत 1,400 रुपये.')">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+</button>
+</div>
+</section>
+<!-- FIXED TACTILE BOTTOM NAVIGATION (Field-Ready Ergonomic Shell) -->
+<nav class="fixed bottom-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-safe">
+<div class="max-w-md mx-auto h-20 px-space-sm flex items-center justify-around relative">
+<!-- Nav 1: Home (Active) -->
+<button aria-label="होम स्क्रीन" class="flex flex-col items-center justify-center w-14 h-14 text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm font-bold mt-0.5">होम</span>
+</button>
+<!-- Nav 2: Vyapar / Digital Twin -->
+<button aria-label="व्यापार ट्विन" class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" onclick="alert('व्यापार डिजिटल ट्विन खुल रहा है...')">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+<span class="font-label-sm text-label-sm font-semibold mt-0.5">व्यापार</span>
+</button>
+<!-- Nav 3: Hero Floating Center Mic (Boliye) -->
+<div class="relative -top-4">
+<button aria-label="बोलकर हिसाब दर्ज करें" class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex flex-col items-center justify-center shadow-[0_8px_24px_rgba(154,68,45,0.45)] active:scale-90 transition-transform" id="navCenterMicBtn">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+<span class="absolute -bottom-5 inset-x-0 text-center font-label-sm text-label-sm font-bold text-secondary">
+          बोलिए
+        </span>
+</div>
+<!-- Nav 4: Anuman / Simulator -->
+<button aria-label="अनुमान सिमुलेशन" class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" onclick="alert('अनुमान और लोन सिमुलेटर खुल रहा है...')">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+<span class="font-label-sm text-label-sm font-semibold mt-0.5">अनुमान</span>
+</button>
+<!-- Nav 5: Khata / Ledger -->
+<button aria-label="खाता बही" class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" onclick="alert('खाता बही खुल रही है...')">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+<span class="font-label-sm text-label-sm font-semibold mt-0.5">खाता</span>
+</button>
+</div>
+</nav>
+</div>
+<script>
+  // Simple Tactile Micro-Interactions
+  function setPrompt(text) {
+    const transcript = document.getElementById('transcriptText');
+    if (transcript) {
+      transcript.innerText = 'पहचाना गया: "' + text + '"';
+      transcript.classList.remove('text-primary-fixed-dim');
+      transcript.classList.add('text-white', 'font-semibold');
+    }
+  }
+
+  const heroMic = document.getElementById('heroVoiceBtn');
+  const bottomMic = document.getElementById('navCenterMicBtn');
+  const audioSpeak = document.getElementById('audioSpeakBtn');
+  const langToggle = document.getElementById('langToggleBtn');
+
+  function triggerListeningAnimation() {
+    const wave = document.getElementById('micWave');
+    const transcript = document.getElementById('transcriptText');
+    if (wave) {
+      wave.classList.remove('opacity-40');
+      wave.classList.add('opacity-90', 'scale-125');
+    }
+    if (transcript) {
+      transcript.innerText = "सुनीता जी, बोलिए... आवाज़ रिकॉर्ड हो रही है...";
+      transcript.classList.add('text-white');
+    }
+    setTimeout(() => {
+      if (wave) {
+        wave.classList.remove('opacity-90', 'scale-125');
+        wave.classList.add('opacity-40');
+      }
+      if (transcript) {
+        transcript.innerText = 'सुना गया: "रमेश टी स्टॉल से ₹850 लेना बाकी है" [FACT]';
+      }
+    }, 2800);
+  }
+
+  if (heroMic) {
+    heroMic.addEventListener('click', triggerListeningAnimation);
+  }
+  if (bottomMic) {
+    bottomMic.addEventListener('click', triggerListeningAnimation);
+  }
+
+  if (audioSpeak) {
+    audioSpeak.addEventListener('click', function() {
+      alert('ऑडियो सुनाया जा रहा है: "नमस्ते सुनीता जी, आज आपकी डेयरी में ₹1,00,000 सुरक्षित रोकड़ है, और रमेश जी का ₹850 बाकी है।"');
+    });
+  }
+
+  let isHindi = true;
+  if (langToggle) {
+    langToggle.addEventListener('click', function() {
+      isHindi = !isHindi;
+      this.querySelector('span:last-child').innerText = isHindi ? 'हिंदी' : 'English';
+    });
+  }
+</script></main></body></html>
